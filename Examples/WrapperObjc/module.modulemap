@@ -1,0 +1,5 @@
+module WrapperObjc {
+  umbrella header "include/WrapperObjc.h"
+
+  export *
+}

@@ -7,13 +7,18 @@ let package = Package(
   products: [
     .library(
       name: "opennurbs",
-      targets: ["opennurbs"]),
+      targets: ["opennurbs"]
+    ),
+    .library(name: "WrapperObjc", targets: ["WrapperObjc"]),
+    .library(name: "WrapperSwift", targets: ["WrapperSwift"]),
+    .executable(name: "app", targets: ["app"])
   ],
   targets: [
     .target(
       name: "opennurbs",
       path: ".",
       exclude: [
+        "Examples/",
         "android_uuid/",
         "example_brep/",
         "example_convert/",
@@ -35,6 +40,23 @@ let package = Package(
         .define("ON_COMPILING_OPENNURBS"),
       ]
     ),
+    .target(
+      name: "WrapperObjc",
+      dependencies: ["opennurbs"],
+      path: "Examples/WrapperObjc"
+    ),
+    .target(
+      name: "WrapperSwift",
+      dependencies: ["WrapperObjc"],
+      path: "Examples/WrapperSwift",
+      sources: ["."]
+    ),
+    .executableTarget(
+      name: "app",
+      dependencies: ["WrapperSwift"],
+      path: "Examples/App/",
+      sources: ["."]
+    )
   ],
   cxxLanguageStandard: .cxx17
 )
