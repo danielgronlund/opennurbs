@@ -1,3 +1,6 @@
+#ifndef opennurbs_lib_h
+#define opennurbs_lib_h
+
 #include "../opennurbs.h"
 #include "../opennurbs_3dm.h"
 #include "../opennurbs_3dm_attributes.h"
@@ -160,3 +163,5 @@
 #include "../opennurbs_workspace.h"
 #include "../opennurbs_xform.h"
 #include "../opennurbs_zlib.h"
+
+#endif /* opennurbs_lib_h */
