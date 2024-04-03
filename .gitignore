@@ -17,6 +17,9 @@ example_write/example_write
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+## SPM
+.swiftpm
+
 ## User settings
 xcuserdata/
 
