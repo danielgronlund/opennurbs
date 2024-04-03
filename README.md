@@ -31,3 +31,7 @@ There's also a collection of [example 3dm files](example_files/) available for t
 ## Questions?
 
 For technical support, please head over to [Discourse](https://discourse.mcneel.com/category/opennurbs).
+
+## Swift Package Manager 
+
+This is a modified version of the [OpenNurbs](https://github.com/mcneel/opennurbs) library. To better support Swift package manger, the example code has been removed. This reduces the footprint when the repo is cloned by SPM.
