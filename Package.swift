@@ -25,9 +25,9 @@ let package = Package(
         "example_userdata/",
         "example_write/",
         "freetype263/",
-        "zlib/",
         "opennurbs_unicode_cp949.cpp",
-        "opennurbs_unicode_cp932.cpp"
+        "opennurbs_unicode_cp932.cpp",
+        "opennurbs_gl.cpp"
       ],
       sources: ["."],
       cxxSettings: [
