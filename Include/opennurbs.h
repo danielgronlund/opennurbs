@@ -56,7 +56,6 @@
 #include "../opennurbs_group.h"
 #include "../opennurbs_hash_table.h"
 #include "../opennurbs_hatch.h"
-#include "../opennurbs_hsort_template.h"
 #include "../opennurbs_input_libsdir.h"
 #include "../opennurbs_instance.h"
 #include "../opennurbs_internal_V2_annotation.h"
