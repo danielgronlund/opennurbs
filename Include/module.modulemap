@@ -1,0 +1,4 @@
+module opennurbs {
+  umbrella header "opennurbs/opennurbs.h"
+  export *
+}

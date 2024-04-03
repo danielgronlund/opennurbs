@@ -19,17 +19,6 @@ let package = Package(
       path: ".",
       exclude: [
         "Examples/",
-        "android_uuid/",
-        "example_brep/",
-        "example_convert/",
-        "example_files/",
-        "example_gl/",
-        "example_read/",
-        "example_roundtrip/",
-        "example_test/",
-        "example_userdata/",
-        "example_write/",
-        "freetype263/",
         "opennurbs_unicode_cp949.cpp",
         "opennurbs_unicode_cp932.cpp",
         "opennurbs_gl.cpp"
@@ -37,8 +26,7 @@ let package = Package(
       sources: ["."],
       cxxSettings: [
         .unsafeFlags(["-Wno-elaborated-enum-class"]),
-        .define("ON_COMPILING_OPENNURBS"),
-        .headerSearchPath(".")
+        .define("ON_COMPILING_OPENNURBS")
       ]
     ),
     .target(
