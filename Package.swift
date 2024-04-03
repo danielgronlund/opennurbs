@@ -38,6 +38,7 @@ let package = Package(
       cxxSettings: [
         .unsafeFlags(["-Wno-elaborated-enum-class"]),
         .define("ON_COMPILING_OPENNURBS"),
+        .headerSearchPath(".")
       ]
     ),
     .target(
