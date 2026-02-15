@@ -19,6 +19,7 @@ example_write/example_write
 
 ## SPM
 .swiftpm
+.build
 
 ## User settings
 xcuserdata/

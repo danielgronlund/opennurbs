@@ -23,7 +23,6 @@ let package = Package(
         "opennurbs_unicode_cp932.cpp",
         "opennurbs_gl.cpp"
       ],
-      sources: ["."],
       cxxSettings: [
         .unsafeFlags(["-Wno-elaborated-enum-class"]),
         .define("ON_COMPILING_OPENNURBS")

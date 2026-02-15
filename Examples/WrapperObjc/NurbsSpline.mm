@@ -1,5 +1,5 @@
 #import "NurbsSpline.h"
-#import <opennurbs.h>
+#import <opennurbs/opennurbs.h>
 
 @interface NurbsSpline () {
   ON_NurbsCurve *_nurbsCurve;
